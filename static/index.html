@@ -1,417 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="width: 100%; height: 100%; margin: 0">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>playground</title>
+    <base href="https://player.app.zef.fi/" />
+
+    <title>Zeffi Survey</title>
+
+    <meta charset="utf-8" />
+
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=0.9,user-scalable=no" />
+
+    <meta name="description" content="Powered By ZEF" />
+    <meta itemprop="description" content="Powered By ZEF" />
+
+    <meta property="og:type" content="object" />
+    <meta property="og:url" content="https://zef.fi/s/btc9br15/" />
+    <meta property="og:title" content="Zeffi Survey" />
+    <meta property="og:image" content="https://storage.zef.fi/gallery/regulars/common/background-default.jpg" />
+    <meta property="og:image:width" content="540" />
+    <meta property="og:image:height" content="275" />
+    <meta property="og:description" content="Powered By ZEF" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zeffi Survey" />
+    <meta name="twitter:description" content="Powered By ZEF" />
+    <meta name="twitter:image" content="https://storage.zef.fi/gallery/regulars/common/background-default.jpg" />
+
+    <script type="text/javascript">
+      ZEF = {
+        root: 'https://survey.zef.fi/btc9br15/',
+
+        link: 'btc9br15',
+        release: 'html',
+        origin: '',
+
+        tags: '',
+        url: 'https://zef.fi/s/btc9br15/',
+      };
+
+      if (window.location.protocol !== 'https:') {
+        window.location.protocol = 'https:';
+      }
+
+      if (window.location.host === 'survey.test.zeffi.dev' && window.location.href.indexOf('zefBase=') > -1) {
+        document.getElementsByTagName('base')[0].href = window.location.href.split('zefBase=')[1].split('&')[0];
+      }
+    </script>
   </head>
-  <body>
-    <zef-app class="zef-visual" _nghost-ydj-c106="" ng-version="12.2.16">
-      <router-outlet _ngcontent-ydj-c106=""></router-outlet>
-      <player-app _nghost-ydj-c102="" class="ng-star-inserted">
-        <div _ngcontent-ydj-c102="" class="z-fx z-fx-center-center accessibility-banner hidden ng-star-inserted">
-          <a _ngcontent-ydj-c102="" routerlink="accessible" class="link" href="/btc9br15/accessible">
-            Enter Accessibility Mode
-          </a>
-        </div>
-        <!---->
-        <survey-view _ngcontent-ydj-c102="" _nghost-ydj-c99="" class="ng-tns-c99-0 ng-star-inserted">
-          <div
-            _ngcontent-ydj-c99=""
-            class="z-container-box z-cover zef-survey ng-tns-c99-0 ng-trigger ng-trigger-surveyState zef-survey--NFmnJ4DG2efZUgkl1jD z-size-xl z-has-multiple"
-            style="font-size: 16px; font-weight: normal; font-family: 'Open Sans'; color: rgb(0, 131, 255)"
-          >
-            <div
-              _ngcontent-ydj-c99=""
-              class="z-cover ng-tns-c99-0"
-              style="
-                filter: blur(0px);
-                background-size: cover;
-                background-color: transparent;
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-image: url('//storage.zef.fi/gallery/regulars/common/background-default.jpg');
-              "
-            ></div>
-            <div _ngcontent-ydj-c99="" class="z-cover ng-tns-c99-0"></div>
-            <div
-              _ngcontent-ydj-c99=""
-              class="z-cover ng-tns-c99-0"
-              style="background-color: rgba(255, 255, 255, 0.8)"
-            ></div>
-            <!---->
-            <ng-scrollbar
-              _ngcontent-ydj-c99=""
-              class="z-perfect-scroll ng-tns-c99-0 ng-scrollbar ng-star-inserted"
-              _nghost-ydj-c43=""
-              style=""
-            >
-              <div
-                _ngcontent-ydj-c43=""
-                class="ng-scrollbar-wrapper"
-                position="native"
-                track="vertical"
-                appearance="standard"
-                visibility="hover"
-                deactivated="false"
-                dir="ltr"
-                pointereventsmethod="viewport"
-                verticalused="false"
-                horizontalused="false"
-                isverticallyscrollable="false"
-                ishorizontallyscrollable="false"
-              >
-                <div _ngcontent-ydj-c43="" class="ng-scroll-viewport-wrapper">
-                  <div
-                    _ngcontent-ydj-c43=""
-                    scrollviewport=""
-                    hidenativescrollbar=""
-                    class="ng-native-scrollbar-hider ng-scroll-viewport"
-                    style="--native-scrollbar-size: 0px"
-                  >
-                    <div _ngcontent-ydj-c43="" class="ng-scroll-content">
-                      <div
-                        _ngcontent-ydj-c99=""
-                        surveyscroller=""
-                        class="z-cards-scroll z-fx-col z-viewstate-questions"
-                        style="touch-action: none; user-select: auto"
-                        tabindex="-1"
-                      >
-                        <div _ngcontent-ydj-c99="" class="z-main-container z-fx-auto ng-tns-c99-0">
-                          <div
-                            _ngcontent-ydj-c99=""
-                            class="z-cards-container z-fx-auto ng-tns-c99-0"
-                            style="min-height: 1081.33px"
-                          >
-                            <!---->
-                            <card-scroll
-                              _ngcontent-ydj-c99=""
-                              class="z-fx-col z-fx-none ng-trigger ng-trigger-cardScroll ng-tns-c99-0 z-size-xl ng-star-inserted"
-                              _nghost-ydj-c66=""
-                              style=""
-                            >
-                              <div
-                                _ngcontent-ydj-c66=""
-                                class="z-card-wrapper z-fx-col z-fx-auto"
-                                style="min-height: 1081.33px"
-                              >
-                                <div
-                                  _ngcontent-ydj-c66=""
-                                  class="z-card-before z-hidden"
-                                  style="background-color: rgba(255, 255, 255, 0.8)"
-                                ></div>
-                                <!---->
-                                <div
-                                  _ngcontent-ydj-c99=""
-                                  class="z-card z-card-inner z-fx-auto"
-                                  id="zef-question--NFmnMROh2jIZE9FLyiq"
-                                  style="background-color: rgba(255, 255, 255, 0.8)"
-                                >
-                                  <!---->
-                                  <div _ngcontent-ydj-c99="" class="z-question-wrap ng-tns-c99-0">
-                                    <question-card
-                                      _ngcontent-ydj-c99=""
-                                      class="ng-tns-c99-0 z-size-xl"
-                                      _nghost-ydj-c89=""
-                                    >
-                                      <!---->
-                                      <div
-                                        _ngcontent-ydj-c89=""
-                                        class="z-title-text z-texts-question z-visible ng-star-inserted"
-                                        style="color: rgb(73, 92, 108)"
-                                      >
-                                        <span _ngcontent-ydj-c89="" class="z-question-title ng-star-inserted">
-                                          <span _ngcontent-ydj-c89="">
-                                            <span _ngcontent-ydj-c89="">
-                                              <span
-                                                _ngcontent-ydj-c89=""
-                                                class="z-question-title-number ng-star-inserted"
-                                              >
-                                                1.
-                                              </span>
-                                              <!---->
-                                              <span
-                                                _ngcontent-ydj-c89=""
-                                                class="z-question-title-text ng-star-inserted"
-                                                style="white-space: pre-line"
-                                              >
-                                                text
-                                              </span>
-                                              <!---->
-                                              <!---->
-                                            </span>
-                                          </span>
-                                        </span>
-                                        <!---->
-                                      </div>
-                                      <!---->
-                                      <div _ngcontent-ydj-c89="" class="z-widget-box z-fx ng-star-inserted" style="">
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <!---->
-                                        <input-simple
-                                          _ngcontent-ydj-c89=""
-                                          class="z-input-wrapper z-size-xl ng-star-inserted"
-                                        >
-                                          <textarea
-                                            autocomplete="off"
-                                            rows="3"
-                                            class="z-input ng-star-inserted"
-                                            maxlength="1500000"
-                                            placeholder=""
-                                            style="
-                                              border-color: rgb(0, 131, 255);
-                                              color: rgba(73, 92, 108, 0.8);
-                                              background-color: rgba(255, 255, 255, 0.2);
-                                              height: 80px;
-                                            "
-                                          ></textarea>
-                                          <!---->
-                                          <!---->
-                                          <!---->
-                                          <!---->
-                                        </input-simple>
-                                        <!---->
-                                      </div>
-                                      <!---->
-                                      <!---->
-                                    </question-card>
-                                    <div
-                                      _ngcontent-ydj-c99=""
-                                      class="z-button-wrapper z-fx-col z-fx-gap-8 ng-tns-c99-0 ng-star-inserted"
-                                      style=""
-                                    >
-                                      <!---->
-                                      <!---->
-                                      <basic-button
-                                        _ngcontent-ydj-c99=""
-                                        class="z-basic-button ng-tns-c99-0 ng-star-inserted"
-                                        _nghost-ydj-c70=""
-                                      >
-                                        <button
-                                          _ngcontent-ydj-c70=""
-                                          class="z-basic-button z-texts-answer"
-                                          style="
-                                            background-color: rgb(239, 93, 101);
-                                            color: rgb(255, 255, 255);
-                                            border-color: rgb(239, 93, 101);
-                                          "
-                                        >
-                                          <span _ngcontent-ydj-c70="">Next</span>
-                                        </button>
-                                      </basic-button>
-                                      <!---->
-                                      <!---->
-                                      <!---->
-                                      <!---->
-                                      <!---->
-                                      <!---->
-                                      <!---->
-                                      <!---->
-                                    </div>
-                                    <!---->
-                                    <!---->
-                                  </div>
-                                </div>
-                                <div
-                                  _ngcontent-ydj-c66=""
-                                  class="z-card-after"
-                                  style="background-color: rgba(255, 255, 255, 0.8)"
-                                ></div>
-                              </div>
-                            </card-scroll>
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <div
-                              _ngcontent-ydj-c99=""
-                              class="z-card-after ng-tns-c99-0 ng-star-inserted"
-                              style="background-color: rgba(255, 255, 255, 0.8)"
-                            ></div>
-                            <!---->
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!---->
-                <!---->
-                <!---->
-                <!---->
-              </div>
-            </ng-scrollbar>
-            <!---->
-            <div _ngcontent-ydj-c99="" class="z-scrollbar-container z-cover ng-tns-c99-0 ng-star-inserted" style="">
-              <div _ngcontent-ydj-c99="" class="z-scrollbar ng-tns-c99-0">
-                <button
-                  _ngcontent-ydj-c99=""
-                  class="z-player-button z-menu-button ng-tns-c99-0 ng-star-inserted"
-                  style="background-color: rgb(255, 255, 255); color: rgb(239, 93, 101)"
-                >
-                  <mat-icon
-                    _ngcontent-ydj-c99=""
-                    role="img"
-                    fontset="zefplayer"
-                    class="mat-icon notranslate ng-tns-c99-0 zef-icons-free mat-icon-no-color"
-                    aria-hidden="true"
-                    data-mat-icon-type="font"
-                    data-mat-icon-namespace="zefplayer"
-                  >
-                    zef_menu
-                  </mat-icon>
-                </button>
-                <!---->
-                <!---->
-                <div _ngcontent-ydj-c99="" class="z-progress-text z-texts-hint ng-tns-c99-0 ng-star-inserted">0%</div>
-                <!---->
-                <questions-scrollbar
-                  _ngcontent-ydj-c99=""
-                  _nghost-ydj-c96=""
-                  class="ng-tns-c99-0 z-size-xl ng-star-inserted"
-                >
-                  <div _ngcontent-ydj-c96="" class="z-progress-wrapper">
-                    <div _ngcontent-ydj-c96="" class="z-progress-steps">
-                      <figure
-                        _ngcontent-ydj-c96=""
-                        class="ng-star-inserted"
-                        style="background-color: rgba(73, 92, 108, 0.05)"
-                      ></figure>
-                      <figure
-                        _ngcontent-ydj-c96=""
-                        class="ng-star-inserted"
-                        style="background-color: rgba(73, 92, 108, 0.05)"
-                      ></figure>
-                      <figure
-                        _ngcontent-ydj-c96=""
-                        class="ng-star-inserted"
-                        style="background-color: rgba(73, 92, 108, 0.05)"
-                      ></figure>
-                      <figure
-                        _ngcontent-ydj-c96=""
-                        class="ng-star-inserted"
-                        style="background-color: rgba(73, 92, 108, 0.05)"
-                      ></figure>
-                      <figure
-                        _ngcontent-ydj-c96=""
-                        class="ng-star-inserted"
-                        style="background-color: rgba(73, 92, 108, 0.05)"
-                      ></figure>
-                      <!---->
-                    </div>
-                    <div _ngcontent-ydj-c96="" class="z-progress-bar">
-                      <div _ngcontent-ydj-c96="" class="z-progress-current" style="top: 10%">
-                        <figure
-                          _ngcontent-ydj-c96=""
-                          class="z-progress-thumb"
-                          style="background-color: rgb(239, 93, 101)"
-                        ></figure>
-                        <figure _ngcontent-ydj-c96="" class="z-progress-counter">1/5</figure>
-                      </div>
-                    </div>
-                  </div>
-                </questions-scrollbar>
-                <div _ngcontent-ydj-c99="" class="z-prev-next ng-tns-c99-0 ng-star-inserted">
-                  <button
-                    _ngcontent-ydj-c99=""
-                    class="z-player-button ng-tns-c99-0 ng-star-inserted"
-                    disabled=""
-                    style="background-color: rgb(255, 255, 255); color: rgb(239, 93, 101)"
-                  >
-                    <mat-icon
-                      _ngcontent-ydj-c99=""
-                      role="img"
-                      fontset="zefplayer"
-                      class="mat-icon notranslate ng-tns-c99-0 zef-icons-free mat-icon-no-color"
-                      aria-hidden="true"
-                      data-mat-icon-type="font"
-                      data-mat-icon-namespace="zefplayer"
-                    >
-                      arrow_up
-                    </mat-icon>
-                  </button>
-                  <!---->
-                  <button
-                    _ngcontent-ydj-c99=""
-                    class="z-player-button ng-tns-c99-0 ng-star-inserted"
-                    style="background-color: rgb(255, 255, 255); color: rgb(239, 93, 101)"
-                  >
-                    <mat-icon
-                      _ngcontent-ydj-c99=""
-                      role="img"
-                      fontset="zefplayer"
-                      class="mat-icon notranslate ng-tns-c99-0 zef-icons-free mat-icon-no-color"
-                      aria-hidden="true"
-                      data-mat-icon-type="font"
-                      data-mat-icon-namespace="zefplayer"
-                    >
-                      arrow_down
-                    </mat-icon>
-                  </button>
-                  <!---->
-                </div>
-                <!---->
-                <!---->
-                <!---->
-                <!---->
-              </div>
-            </div>
-            <!---->
-            <!---->
-            <!---->
-            <!---->
-            <!---->
-            <!---->
-            <!---->
-            <!---->
-          </div>
-          <!---->
-          <!---->
-          <!---->
-          <!---->
-          <!---->
-          <!---->
-          <!---->
-          <!---->
-        </survey-view>
-        <!---->
-        <!---->
-        <!---->
-      </player-app>
-      <!---->
-    </zef-app>
+
+  <body style="width: 100%; height: 100%; margin: 0">
+    <zef-app class="zef-visual"></zef-app>
+
+    <script type="text/javascript" src="https://survey.zef.fi/btc9br15/zefembed.js"></script>
   </body>
 </html>
